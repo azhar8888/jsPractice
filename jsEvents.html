@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="azhar"></p>
+    <button onclick=document.getElementById('azhar').innerHTML=Date()
+    >date
+</button>
+
+<button onclick="this.innerHTML=Date()"
+>display date by this method
+
+</button>
+<button onclick="dateShow()">date by function method</button>
+<script>
+    function dateShow() {document.getElementById("demo").innerHTML=Date();
+
+    }
+</script>
+    
+
+<p id="demo"></p>
+
+<button onclick="knowDate()">
+another function date</button>
+<script>
+    function knowDate() {
+        document.getElementById("fun").innerHTML=Date();
+    }
+</script>
+<p id="fun"></p>
+
+</body>
+</html><button onclick="document.getElementById("azhar").innerHTML=date()">press</button>
+
+<button onclick="document.getElementById("demo").innerHTML=Date()">The time is?</button>
